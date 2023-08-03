@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>ARM Travel Agents</title>
+        <link rel="stylesheet" href="./css/style.css">        
+    </head>
+<body>
+
+    <header class="header">
+        <div class="icon">ARM</div>
+        <nav class="nav">
+            <div class="nav-box">
+                <a href="#home" onclick="scrollToHome()">Home</a>
+            </div>
+            <div class="nav-box">
+                <a href="#package" onclick="scrollToOurPackages()">Our Packages</a>
+            </div>
+            <div class="nav-box">
+                <a href="#contact" onclick="scrollToContact()">Call us</a>
+            </div>
+        </nav>
+    </header>
+        
+<section id="home">
+    <h1 style="text-align: center;">ARM Travel Agent's</h1>
+    <p style="text-align: center;">Your Happiness, is Our Happiness</p><br>
+
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="width: 300px; margin-right: 180px; ">
+            
+            <img src="assets/Travel.JPG" alt="Gambar" style="width: 450px; height: 300px; ">
+            <p>"Liburan menjadi menyenangkan bersama ARM Travel Agent's."</p>
+            <div class="home-content">
+                <img src="assets/Unknown_People.PNG" alt="Gambar" style="width: 20%;">
+                <div>
+                  <p><b>Florence Hughes</b></p>
+                  <p><i>Ibu Rumah Tangga, 28</i></p>
+                </div>
+              </div>
+            <div class="benefit">
+                <h3>Why choose us?</h3>
+                    <ul>
+                        <li>Best Offer For Each Package</li>
+                        <li>The Right Price For Everyone</li>
+                        <li>Discounts for those who already have families</li>
+                        <li>Customer Service is always ready 24 hours</li>
+                        <li>100% money back if the customer suffers a loss</li>
+                    </ul>
+            </div>
+            
+        </div>
+
+        <div>
+            <form onsubmit="return validateForm()" style="display: flex; flex-direction: column;">
+                <h3 style="text-align: left;">Contact us</h3>
+            <p style="text-align: left; font-size : px;">Sales akan menghubungi anda 1 x 24 jam setelah data kami terima.</p><br>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="First and Last Name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                
+                <label for="message">What Are You Interested In ? </label>
+                <select id="destination" name="destination">
+                    <option value="" selected disabled>Enter Your Option</option>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="new_york">New York</option>
+                    <option value="london">London</option>
+                    <option value="Bali">Bali</option>
+                    <option value="Seoul">Seoul</option>
+                </select>
+                
+                <input type="submit" value="Send" style="margin-top: 10px;">
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="package">
+    <h1 style="text-align: center;">Our Package</h1>
+
+    <div class="package-container">
+        <div class="paket">
+            <img src="./assets/Paris.jpg" alt="paket1">
+            <div class="paket-detail">
+                <p class="destinasi">Paris</p>
+                <p class="desc"><i>Nikmati Keindahan Menara Eiffel yang Menakjubkan</p></i>
+            </div>
+        </div>
+        <div class="paket">
+            <img src="./assets/Tokyo.jpg" alt="paket2">
+            <div class="paket-detail">
+                <p class="destinasi">Tokyo</p>
+                <p class="desc"><i>Mari Berkunjung Ke Tokyo dimana banyak Bangunan dengan Arsitektur menarik</p></i>
+            </div>
+        </div>
+        <div class="paket">
+            <img src="./assets/NewYork.jpg" alt="paket3">
+            <div class="paket-detail">
+                <p class="destinasi">New york</p>
+                <p class="desc"><i>Jelajahi New York yang merupakan salah satu kota tersibuk di Dunia</p></i>
+            </div>
+        </div>
+        <div class="paket">
+            <img src="./assets/London.jpg" alt="paket4">
+            <div class="paket-detail">
+                <p class="destinasi">London</p>
+                <p class="desc"><i>Kunjungi banyak tempat bersejarah dari sejarah Kerajaan Inggris Terdahulu</p></i>
+            </div>
+        </div>
+        <div class="paket">
+            <img src="./assets/Bali.jpg" alt="paket5">
+            <div class="paket-detail">
+                <p class="destinasi">Bali</p>
+                <p class="desc"><i>Nikmati Keindahan Pantai dan Alam Indonesia</p></i>
+            </div>
+        </div>
+        <div class="paket">
+            <img src="./assets/Seoul.jpg" alt="paket6">
+            <div class="paket-detail">
+                <p class="destinasi">Seoul</p>
+                <p class="desc"><i>Nikmari Keindahan N Seoul Tower yang menawarkan pemandangan spektakuler</p></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h1 style="text-align: center;">Call Us</h1>
+    <p style="text-align: center;" class="contact-description">For the best travel experience, Call Us If You Have Any Question About Your Journey </p>
+    <button class="contact-button">Call Us Now !</button>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2023 Aulia Rahman Maulana</p>
+    <div>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </div>
+    <div>
+        <p>Address: Palangka Raya, Kalimantan Tengah</p>
+        <p>Phone: +6285381029321</p>
+        <p>Email: qwerty@gmail.com.com</p>
+    </div>
+</footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>
